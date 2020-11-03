@@ -1,0 +1,202 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	color: #4a4a4a;
+	font-size: 16px;
+}
+
+.wrap {
+	min-height: 100vh;
+	padding-top: 128px;
+}
+
+.center {
+	padding: 0 calc(50% - 590px);
+}
+
+.catalog__heading {
+	text-align: center;
+	font-size: 28px;
+	line-height: 36px;
+}
+.catalog__box {
+	margin-top: 32px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.catalog__item {
+	width: 272px;
+	padding: 16px;
+	margin-bottom: 16px;
+	border-radius: 3px;
+	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.catalog__item:hover {
+	box-shadow: 0 9px 12px 1px rgba(0, 0, 0, 0.14), 0 3px 16px 2px rgba(0, 0, 0, 0.12), 0 5px 6px -3px rgba(0, 0, 0, 0.2);
+}
+.catalog__item__wrap {
+	display: flex;
+	flex-direction: column;
+}
+.catalog__item__image {
+	display: inline-block;
+	align-self: center;
+	width: 200px;
+	height: 200px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.catalog__item__desc {
+	margin-top: 16px;
+}
+.catalog__item__name {
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	color: #4a4a4a;
+	transition: all 0.2s ease;
+}
+.catalog__item__name:hover {
+	color: #005bff;
+}
+.catalog__item__price {
+	margin-top: 16px;
+	margin-bottom: 8px;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 600;
+	letter-spacing: 0.3px;
+}
+.catalog__item__rate {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 16px;
+}
+.catalog__item__rate__item:not(:last-child) {
+	margin-right: 2px;
+}
+.catalog__item__rate__item i {
+	color: #ff8970;
+}
+.catalog__item__btn {
+	text-align: center;
+}
+.catalog__item__addToCard {
+	display: inline-block;
+	padding: 12px 16px;
+	border-radius: 5px;
+	border: 2px solid #005bff;
+	background-color: #005bff;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 0.4px;
+	color: white;
+	transition: all 0.3s ease;
+}
+.catalog__item__addToCard:hover {
+	background-color: #0037ff;
+}
+.catalog__item__addToCard:active {
+	color: #0037ff;
+	background-color: white;
+}
+.catalog__item__iphone12pro512gold {
+	background-image: url("https://cdn1.ozone.ru/s3/multimedia-q/6025766378.jpg");
+}
+.catalog__item__iphone12red256 {
+	background-image: url("https://cdn1.ozone.ru/s3/multimedia-n/6025763819.jpg");
+}
+.catalog__item__iphone12white256 {
+	background-image: url("https://cdn1.ozone.ru/s3/multimedia-u/6025763826.jpg");
+}
+.catalog__item__iphone12green128 {
+	background-image: url("https://cdn1.ozone.ru/s3/multimedia-l/6027104745.jpg");
+}

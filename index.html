@@ -5,236 +5,248 @@
 	<meta name="viewport"
 				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>ACME | Home</title>
+	<title>Grids</title>
 	<link rel="stylesheet" href="./css/style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/3107014760.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="wrapper">
 	<header class="header">
 		<div class="header__logo">
-			<a href="/index.html" class="header__logo-link">
-				<img src="./img/logo_h.svg" alt="logo">
-			</a>
+			<a href="/index.html" class="header__logo-link">Adobe Color</a>
 		</div>
-		<div class="header__wrap center-outer">
-			<nav class="header__mainNav">
-				<ul class="header__mainNav-list">
-					<li class="header__mainNav-item">
-						<a href="#" class="header__mainNav-link">First</a>
-					</li>
-					<li class="header__mainNav-item">
-						<a href="#" class="header__mainNav-link">Second</a>
-					</li>
-					<li class="header__mainNav-item">
-						<a href="#" class="header__mainNav-link">Third</a>
-					</li>
-					<li class="header__mainNav-item">
-						<a href="#" class="header__mainNav-link">Fourth</a>
-					</li>
-					<li class="header__mainNav-item">
-						<a href="#" class="header__mainNav-link">Fifth</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="header__action">
-				<a href="#" class="header__action-button">Action</a>
-			</div>
+		<nav class="header__menu">
+			<ul class="header__menu-list">
+				<li class="header__menu-item">
+					<a href="#" class="header__menu-link">Создать</a>
+				</li>
+				<li class="header__menu-item">
+					<a href="#" class="header__menu-link">Смотреть</a>
+				</li>
+				<li class="header__menu-item">
+					<a href="#" class="header__menu-link header__menu-link-active">Тенденции</a>
+				</li>
+				<li class="header__menu-item">
+					<a href="#" class="header__menu-link">Библиотеки</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="header__options">
+			<ul class="header__options-list">
+				<li class="header__options-item">
+					<a href="#" class="header__options-link">
+						<i class="header__options-icon far fa-star"></i>
+					</a>
+				</li>
+				<li class="header__options-item">
+					<a href="#" class="header__options-link">
+						<i class="header__options-icon fas fa-bell"></i>
+					</a>
+				</li>
+				<li class="header__options-item">
+					<a href="#" class="header__options-link">
+						<i class="header__options-icon far fa-question-circle"></i>
+					</a>
+				</li>
+				<li class="header__options-item">
+					<a href="#" class="header__options-link">
+						<i class="header__options-icon fas fa-exclamation-circle"></i>
+					</a>
+				</li>
+				<li class="header__options-item">
+					<a href="#" class="header__options-link">
+						<i class="header__options-icon fas fa-comment-dots"></i>
+					</a>
+				</li>
+				<li class="header__options-item">
+					<a href="#" class="header__options-link">
+						<span>Войти</span>
+					</a>
+				</li>
+				<li class="header__options-item">
+					<a href="#" class="header__options-link">
+						<i class="header__options-icon fas fa-th"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="header__options-link">
+						<i class="header__options-icon fab fa-mixcloud"></i>
+					</a>
+				</li>
+			</ul>
 		</div>
 	</header>
-	<main class="main center">
-		<section class="blockOne">
-			<div class="blockOne__left">
-				<div class="blockOne__content">
-					<p class="blockOne__content-tagline">Tagline</p>
-					<h2 class="blockOne__content-heading">Medium length display headline</h2>
-					<form action="#" class="blockOne__content-form">
-						<input type="text" class="blockOne__content-input" placeholder="Placeholder">
-						<button type="submit" class="blockOne__content-submit">Action</button>
-						<p class="blockOne__content-subText">By clicking the Button you confirming that you’re agree with our following Terms and Conditions</p>
-					</form>
-				</div>
-			</div>
-			<div class="blockOne__right">
-				<div class="blockOne__image"></div>
+	<main class="main">
+		<section class="searchbar">
+			<div class="searchbar__wrap">
+				<input
+						type="search"
+						class="searchbar__input"
+						placeholder="Поиск по цветам, настроениям или ключевым словам, таким как океан, вино, лунный свет, удача, вода..."
+				>
+				<button class="searchbar__button" type="submit">
+					<i class="fas fa-camera"></i>
+				</button>
 			</div>
 		</section>
-		<section class="blockTwo">
-			<div class="blockTwo__content">
-				<p class="blockTwo__tagline">Tagline</p>
-				<h2 class="blockTwo__heading">Long headline to turn your visitors into users</h2>
-				<p class="blockTwo__text">Change the color to match your brand or vision, add your logo, choose the perfect thumbnail, remove the playbar, add speed controls, and more. Increase engagement with CTAs and custom end screens, or keep your video private and password-protected.</p>
-			</div>
+		<section class="topHeading">
+			<p class="topHeading__title">Узнайте о текущих цветовых трендах в разных отраслях от творческих сообществ Behance
+				и Adobe Stock.</p>
 		</section>
-		<section class="blockThree">
-			<div class="blockThree__left">
-				<div class="blockThree__image"></div>
-			</div>
-			<div class="blockThree__right">
-				<div class="blockThree__content">
-					<h2 class="blockThree__heading">Long headline on two lines to turn your visitors into users and achieve more</h2>
-					<p class="blockThree__text">
-						Separated they live in Bookmarks right at the coast of the famous Semantics, large language ocean Separated they live in Bookmarks right at the coast.
-						<a href="#" class="blockThree__text-link"> Read more</a>
-					</p>
-					<div class="blockThree__feature">
-						<div class="blockThree__feature-column">
-							<div class="blockThree__feature-image blockThree__feature-image-one"></div>
-							<h4 class="blockThree__feature-title">Feature one</h4>
-							<p class="blockThree__feature-text">Gorgeous, high-quality video sharing on desktop, mobile, tablet</p>
-						</div>
-						<div class="blockThree__feature-column">
-							<div class="blockThree__feature-image blockThree__feature-image-two"></div>
-							<h4 class="blockThree__feature-title">Feature two</h4>
-							<p class="blockThree__feature-text">Gorgeous, high-quality video sharing on desktop, mobile, tablet</p>
-						</div>
+		<section class="fashion">
+			<aside class="fashion__sidebar">
+				<h2 class="fashion__sidebar-title">Мода</h2>
+				<p class="fashion__sidebar-text">Экспериментируйте с цветом, используя передовые модные решения в Behance, от
+					естественной богемности до яркости от-кутюр.</p>
+			</aside>
+			<section class="fashion__gallery">
+				<div class="fashion__items">
+					<div class="fashion__item">
+						<img
+								src="https://mir-s3-cdn-cf.behance.net/projects/202/c210ea105865481.5f83044c56720.png"
+								alt="item_image"
+								class="fashion__item-image"
+						>
+					</div>
+					<div class="fashion__item">
+						<img
+								src="https://mir-s3-cdn-cf.behance.net/projects/202/8bc4a0105454397.5f79c3161f6d5.jpg"
+								alt="item_image"
+								class="fashion__item-image"
+						>
+					</div>
+					<div class="fashion__item">
+						<img
+								src="https://mir-s3-cdn-cf.behance.net/projects/202/2e632e106587909.Y3JvcCwxNDAwLDEwOTUsMCww.jpg"
+								alt="item_image"
+								class="fashion__item-image"
+						>
+					</div>
+					<div class="fashion__item">
+						<img
+								src="https://mir-s3-cdn-cf.behance.net/projects/202/5bed69107060565.Y3JvcCwzOTA5LDMwNTgsODcsMA.jpg"
+								alt="item_image"
+								class="fashion__item-image"
+						>
+					</div>
+					<div class="fashion__item">
+						<img
+								src="https://mir-s3-cdn-cf.behance.net/projects/202/95995f91182173.Y3JvcCw2NzksNTMxLDE2OSw0Njc.jpg"
+								alt="item_image"
+								class="fashion__item-image"
+						>
+					</div>
+					<div class="fashion__item">
+						<img
+								src="https://mir-s3-cdn-cf.behance.net/projects/202/941920105258521.Y3JvcCw4NDcsNjYyLDAsMjc.jpg"
+								alt="item_image"
+								class="fashion__item-image"
+						>
+					</div>
+					<div class="fashion__item">
+						<img
+								src="https://mir-s3-cdn-cf.behance.net/projects/202/b58e2287100719.Y3JvcCwxNDAwLDEwOTUsMCwxNTI.jpg"
+								alt="item_image"
+								class="fashion__item-image"
+						>
+					</div>
+					<div class="fashion__item">
+						<img
+								src="https://mir-s3-cdn-cf.behance.net/projects/202/85a25f93903297.5e7bae8b51c48.jpg"
+								alt="item_image"
+								class="fashion__item-image"
+						>
+					</div>
+					<div class="fashion__item">
+						<img
+								src="https://mir-s3-cdn-cf.behance.net/projects/202/61107b93870491.Y3JvcCwxMjk3LDEwMTQsMCw2NzQ.jpg"
+								alt="item_image"
+								class="fashion__item-image"
+						>
+					</div>
+					<div class="fashion__item">
+						<img
+								src="https://mir-s3-cdn-cf.behance.net/projects/202/acf37299768293.Y3JvcCwxMTkyLDkzMywxMDMsMA.jpg"
+								alt="item_image"
+								class="fashion__item-image"
+						>
+					</div>
+					<div class="fashion__item">
+						<img
+								src="https://mir-s3-cdn-cf.behance.net/projects/202/59cac190218709.Y3JvcCwzNjQ4LDI4NTMsMCwxMzA5.jpg"
+								alt="item_image"
+								class="fashion__item-image"
+						>
+					</div>
+					<div class="fashion__item">
+						<img
+								src="https://mir-s3-cdn-cf.behance.net/projects/202/c3384c107005173.Y3JvcCwxOTY1LDE1MzcsMTE2LDI5.jpg"
+								alt="item_image"
+								class="fashion__item-image"
+						>
+					</div>
+					<div class="fashion__item">
+						<img
+								src="https://mir-s3-cdn-cf.behance.net/projects/202/11b264106002903.Y3JvcCwxMzc2LDEwNzcsMjY5LDA.jpg"
+								alt="item_image"
+								class="fashion__item-image"
+						>
+					</div>
+					<div class="fashion__item">
+						<img
+								src="https://mir-s3-cdn-cf.behance.net/projects/202/c3887f103106561.Y3JvcCwzMjQ1LDI1MzgsMCwxNTc0.jpg"
+								alt="item_image"
+								class="fashion__item-image"
+						>
+					</div>
+					<div class="fashion__item">
+						<img
+								src="https://mir-s3-cdn-cf.behance.net/projects/202/3df775106330403.Y3JvcCw5NTEsNzQ0LDEzMSw5OA.jpg"
+								alt="item_image"
+								class="fashion__item-image"
+						>
+					</div>
+					<div class="fashion__item">
+						<img
+								src="https://mir-s3-cdn-cf.behance.net/projects/202/4e022e107089267.Y3JvcCwxMzMzLDEwNDIsMCw0MTk.jpg"
+								alt="item_image"
+								class="fashion__item-image"
+						>
 					</div>
 				</div>
-			</div>
-		</section>
-		<section class="blockFour">
-			<div class="blockFour__left">
-				<div class="blockFour__content">
-					<h2 class="blockFour__heading">Long headline on two lines to turn your visitors into users and achieve more</h2>
-					<p class="blockFour__text">Separated they live in Bookmarks right at the coast of the famous Semantics, large language ocean Separated they live in Bookmarks right at the coast</p>
-					<ul class="blockFour__brands">
-						<li class="blockFour__brands-item blockFour__brands-item-payPal"></li>
-						<li class="blockFour__brands-item blockFour__brands-item-applePay"></li>
-						<li class="blockFour__brands-item blockFour__brands-item-androidPay"></li>
-						<li class="blockFour__brands-item blockFour__brands-item-samsungPay"></li>
-					</ul>
-				</div>
-			</div>
-			<div class="blockFour__right">
-				<div class="blockFour__image"></div>
-			</div>
-		</section>
-		<section class="blockFive">
-			<div class="blockFive__left">
-				<div class="blockFive__image"></div>
-			</div>
-			<div class="blockFive__right">
-				<div class="blockFive__content">
-					<h2 class="blockFive__heading">Long headline on two lines to turn your visitors into users and achieve more</h2>
-					<p class="blockFive__text">Separated they live in Bookmarks right at the coast of the famous Semantics, large language ocean Separated they live in Bookmarks right at the coast</p>
-					<ul class="blockFive__options">
-						<li class="blockFive__options-item">Showcase and embed your work with</li>
-						<li class="blockFive__options-item">Publish across social channels in a click</li>
-						<li class="blockFive__options-item">Sell your videos worldwide</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-		<section class="blockSix">
-			<div class="blockSix__column">
-				<div class="blockSix__content">
-					<h3 class="blockSix__heading">Medium length headline</h3>
-					<p class="blockSix__text">Change the color to match your brand or vision, add your logo, choose the perfect thumbnail, remove the playbar</p>
-					<a href="#" class="blockSix__link">
-						Read more<i class="fas fa-chevron-right"></i>
-					</a>
-				</div>
-			</div>
-			<div class="blockSix__separator"></div>
-			<div class="blockSix__column">
-				<div class="blockSix__content">
-					<h3 class="blockSix__heading">Medium length headline</h3>
-					<p class="blockSix__text">Change the color to match your brand or vision, add your logo, choose the perfect thumbnail, remove the playbar</p>
-					<a href="#" class="blockSix__link">
-						Read more<i class="fas fa-chevron-right"></i>
-					</a>
-				</div>
-			</div>
+				<button class="fashion__showMore">
+					<span class="fashion__showMore-text">Посмотреть еще</span>
+					<i class="fashion__showMore-icon fas fa-chevron-right"></i>
+				</button>
+			</section>
 		</section>
 	</main>
-	<footer class="footer center">
-		<div class="footerMain">
-			<section class="footerMain__column">
-				<div class="footerMain__logo">
-					<a href="/index.html" class="footerMain__logo-link">
-						<div class="footerMain__logo-image"></div>
-					</a>
-				</div>
-				<form action="#" class="footerMain__form">
-					<label for="footer-subscribe" class="footerMain__form-label">
-						Join our newsletter to stay up to date on features and releases
-					</label>
-					<div class="footerMain__form-inputWrapper">
-						<input
-								type="email"
-								id="footer-subscribe"
-								class="footerMain__form-input"
-								placeholder="Enter your email address"
-						>
-						<button
-								type="submit"
-								class="footerMain__form-button"
-						>
-							<i class="fab fa-telegram-plane"></i>
-						</button>
-					</div>
-				</form>
-			</section>
-			<section class="footerMain__column footerMain__column-nav">
-				<nav class="footerMain__nav">
-					<ul class="footerMain__nav-list">
-						<li class="footerMain__nav-item">
-							<a href="#" class="footerMain__nav-link">First</a>
-						</li>
-						<li class="footerMain__nav-item">
-							<a href="#" class="footerMain__nav-link">Second page</a>
-						</li>
-						<li class="footerMain__nav-item">
-							<a href="#" class="footerMain__nav-link">Third</a>
-						</li>
-						<li class="footerMain__nav-item">
-							<a href="#" class="footerMain__nav-link">Fourth</a>
-						</li>
-						<li class="footerMain__nav-item">
-							<a href="#" class="footerMain__nav-link">Fifth</a>
-						</li>
-						<li class="footerMain__nav-item">
-							<a href="#" class="footerMain__nav-link">Sixth</a>
-						</li>
-						<li class="footerMain__nav-item">
-							<a href="#" class="footerMain__nav-link">Seventh</a>
-						</li>
-					</ul>
-				</nav>
-			</section>
-			<section class="footerMain__column footerMain__column-social">
-				<ul class="footerMain__social">
-					<li class="footerMain__social-item">
-						<a href="#" class="footerMain__social-link">
-							<i class="footerMain__social-icon fab fa-instagram"></i>Instagram
-						</a>
-					</li>
-					<li class="footerMain__social-item">
-						<a href="#" class="footerMain__social-link">
-							<i class="footerMain__social-icon fab fa-facebook-square"></i>Facebook
-						</a>
-					</li>
-					<li class="footerMain__social-item">
-						<a href="#" class="footerMain__social-link">
-							<i class="footerMain__social-icon fab fa-twitter"></i>Twitter
-						</a>
-					</li>
-				</ul>
-			</section>
+	<footer class="footer">
+		<div class="footer__lang">
+			<p class="footer__lang-text">Язык:<span class="footer__lang-option">Русский</span></p>
 		</div>
-		<div class="footerSmall">
-			<span class="footerSmall__rights">© 2020 Stanislav Zavialov</span>
-			<nav class="footerSmall__nav">
-				<ul class="footerSmall__nav-list">
-					<li class="footerSmall__nav-item">
-						<a href="#" class="footerSmall__nav-link">Privacy Policy</a>
-					</li>
-					<li class="footerSmall__nav-item">
-						<a href="#" class="footerSmall__nav-link">Terms of Service</a>
-					</li>
-				</ul>
-			</nav>
+		<nav class="footer__menu">
+			<ul class="footer__menu-list">
+				<li class="footer__menu-item">
+					<a href="#" class="footer__menu-link">Условия использования</a>
+				</li>
+				<li class="footer__menu-item">
+					<a href="#" class="footer__menu-link">Конфедициальность</a>
+				</li>
+				<li class="footer__menu-item">
+					<a href="#" class="footer__menu-link">Форумы пользователей</a>
+				</li>
+				<li class="footer__menu-item">
+					<a href="#" class="footer__menu-link">Правила сообщества</a>
+				</li>
+				<li class="footer__menu-item">
+					<span class="footer__copy">Copyright &copy; 2020 Stanislav Zavialov.</span>
+				</li>
+			</ul>
+		</nav>
+		<div class="footer__logo">
+			<a href="#" class="footer__logo-link">Adobe</a>
 		</div>
 	</footer>
 </div>

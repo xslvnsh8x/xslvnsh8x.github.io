@@ -13,6 +13,9 @@
 <body>
 <div class="wrapper">
 	<header class="header">
+		<button class="header__burger">
+			<i class="header__burger-icon fas fa-bars"></i>
+		</button>
 		<div class="header__logo">
 			<a href="/index.html" class="header__logo-link">Adobe Color</a>
 		</div>
@@ -76,6 +79,19 @@
 				</li>
 			</ul>
 		</div>
+		<div class="header__options-mobile">
+			<ul class="header__options-list">
+				<li class="header__options-item">
+					<a href="#" class="header__options-link">
+						<i class="header__options-icon fas fa-comment-dots"></i>
+					</a>
+				</li>
+				<li class="header__options-item">
+					<a href="#" class="header__options-link">
+						<span class="header__options-span">Войти</span>
+					</a>
+			</ul>
+		</div>
 	</header>
 	<main class="main">
 		<section class="searchbar">
@@ -84,6 +100,18 @@
 						type="search"
 						class="searchbar__input"
 						placeholder="Поиск по цветам, настроениям или ключевым словам, таким как океан, вино, лунный свет, удача, вода..."
+				>
+				<button class="searchbar__button" type="submit">
+					<i class="fas fa-camera"></i>
+				</button>
+			</div>
+		</section>
+		<section class="searchbarMobile">
+			<div class="searchbar__wrap">
+				<input
+						type="search"
+						class="searchbar__input"
+						placeholder="Поиск"
 				>
 				<button class="searchbar__button" type="submit">
 					<i class="fas fa-camera"></i>
@@ -101,124 +129,213 @@
 					естественной богемности до яркости от-кутюр.</p>
 			</aside>
 			<section class="fashion__gallery">
-				<div class="fashion__items">
-					<div class="fashion__item">
-						<img
-								src="https://mir-s3-cdn-cf.behance.net/projects/202/c210ea105865481.5f83044c56720.png"
-								alt="item_image"
-								class="fashion__item-image"
-						>
-					</div>
-					<div class="fashion__item">
-						<img
-								src="https://mir-s3-cdn-cf.behance.net/projects/202/8bc4a0105454397.5f79c3161f6d5.jpg"
-								alt="item_image"
-								class="fashion__item-image"
-						>
-					</div>
-					<div class="fashion__item">
-						<img
-								src="https://mir-s3-cdn-cf.behance.net/projects/202/2e632e106587909.Y3JvcCwxNDAwLDEwOTUsMCww.jpg"
-								alt="item_image"
-								class="fashion__item-image"
-						>
-					</div>
-					<div class="fashion__item">
-						<img
-								src="https://mir-s3-cdn-cf.behance.net/projects/202/5bed69107060565.Y3JvcCwzOTA5LDMwNTgsODcsMA.jpg"
-								alt="item_image"
-								class="fashion__item-image"
-						>
-					</div>
-					<div class="fashion__item">
-						<img
-								src="https://mir-s3-cdn-cf.behance.net/projects/202/95995f91182173.Y3JvcCw2NzksNTMxLDE2OSw0Njc.jpg"
-								alt="item_image"
-								class="fashion__item-image"
-						>
-					</div>
-					<div class="fashion__item">
-						<img
-								src="https://mir-s3-cdn-cf.behance.net/projects/202/941920105258521.Y3JvcCw4NDcsNjYyLDAsMjc.jpg"
-								alt="item_image"
-								class="fashion__item-image"
-						>
-					</div>
-					<div class="fashion__item">
-						<img
-								src="https://mir-s3-cdn-cf.behance.net/projects/202/b58e2287100719.Y3JvcCwxNDAwLDEwOTUsMCwxNTI.jpg"
-								alt="item_image"
-								class="fashion__item-image"
-						>
-					</div>
-					<div class="fashion__item">
-						<img
-								src="https://mir-s3-cdn-cf.behance.net/projects/202/85a25f93903297.5e7bae8b51c48.jpg"
-								alt="item_image"
-								class="fashion__item-image"
-						>
-					</div>
-					<div class="fashion__item">
-						<img
-								src="https://mir-s3-cdn-cf.behance.net/projects/202/61107b93870491.Y3JvcCwxMjk3LDEwMTQsMCw2NzQ.jpg"
-								alt="item_image"
-								class="fashion__item-image"
-						>
-					</div>
-					<div class="fashion__item">
-						<img
-								src="https://mir-s3-cdn-cf.behance.net/projects/202/acf37299768293.Y3JvcCwxMTkyLDkzMywxMDMsMA.jpg"
-								alt="item_image"
-								class="fashion__item-image"
-						>
-					</div>
-					<div class="fashion__item">
-						<img
-								src="https://mir-s3-cdn-cf.behance.net/projects/202/59cac190218709.Y3JvcCwzNjQ4LDI4NTMsMCwxMzA5.jpg"
-								alt="item_image"
-								class="fashion__item-image"
-						>
-					</div>
-					<div class="fashion__item">
-						<img
-								src="https://mir-s3-cdn-cf.behance.net/projects/202/c3384c107005173.Y3JvcCwxOTY1LDE1MzcsMTE2LDI5.jpg"
-								alt="item_image"
-								class="fashion__item-image"
-						>
-					</div>
-					<div class="fashion__item">
-						<img
-								src="https://mir-s3-cdn-cf.behance.net/projects/202/11b264106002903.Y3JvcCwxMzc2LDEwNzcsMjY5LDA.jpg"
-								alt="item_image"
-								class="fashion__item-image"
-						>
-					</div>
-					<div class="fashion__item">
-						<img
-								src="https://mir-s3-cdn-cf.behance.net/projects/202/c3887f103106561.Y3JvcCwzMjQ1LDI1MzgsMCwxNTc0.jpg"
-								alt="item_image"
-								class="fashion__item-image"
-						>
-					</div>
-					<div class="fashion__item">
-						<img
-								src="https://mir-s3-cdn-cf.behance.net/projects/202/3df775106330403.Y3JvcCw5NTEsNzQ0LDEzMSw5OA.jpg"
-								alt="item_image"
-								class="fashion__item-image"
-						>
-					</div>
-					<div class="fashion__item">
-						<img
-								src="https://mir-s3-cdn-cf.behance.net/projects/202/4e022e107089267.Y3JvcCwxMzMzLDEwNDIsMCw0MTk.jpg"
-								alt="item_image"
-								class="fashion__item-image"
-						>
+				<div class="fashion__gallery-container">
+					<div class="fashion__items">
+						<div class="fashion__item">
+							<img
+									src="https://mir-s3-cdn-cf.behance.net/projects/202/c210ea105865481.5f83044c56720.png"
+									alt="item_image"
+									class="fashion__item-image"
+							>
+						</div>
+						<div class="fashion__item">
+							<img
+									src="https://mir-s3-cdn-cf.behance.net/projects/202/8bc4a0105454397.5f79c3161f6d5.jpg"
+									alt="item_image"
+									class="fashion__item-image"
+							>
+						</div>
+						<div class="fashion__item">
+							<img
+									src="https://mir-s3-cdn-cf.behance.net/projects/202/2e632e106587909.Y3JvcCwxNDAwLDEwOTUsMCww.jpg"
+									alt="item_image"
+									class="fashion__item-image"
+							>
+						</div>
+						<div class="fashion__item">
+							<img
+									src="https://mir-s3-cdn-cf.behance.net/projects/202/5bed69107060565.Y3JvcCwzOTA5LDMwNTgsODcsMA.jpg"
+									alt="item_image"
+									class="fashion__item-image"
+							>
+						</div>
+						<div class="fashion__item">
+							<img
+									src="https://mir-s3-cdn-cf.behance.net/projects/202/95995f91182173.Y3JvcCw2NzksNTMxLDE2OSw0Njc.jpg"
+									alt="item_image"
+									class="fashion__item-image"
+							>
+						</div>
+						<div class="fashion__item">
+							<img
+									src="https://mir-s3-cdn-cf.behance.net/projects/202/941920105258521.Y3JvcCw4NDcsNjYyLDAsMjc.jpg"
+									alt="item_image"
+									class="fashion__item-image"
+							>
+						</div>
+						<div class="fashion__item">
+							<img
+									src="https://mir-s3-cdn-cf.behance.net/projects/202/b58e2287100719.Y3JvcCwxNDAwLDEwOTUsMCwxNTI.jpg"
+									alt="item_image"
+									class="fashion__item-image"
+							>
+						</div>
+						<div class="fashion__item">
+							<img
+									src="https://mir-s3-cdn-cf.behance.net/projects/202/85a25f93903297.5e7bae8b51c48.jpg"
+									alt="item_image"
+									class="fashion__item-image"
+							>
+						</div>
+						<div class="fashion__item">
+							<img
+									src="https://mir-s3-cdn-cf.behance.net/projects/202/61107b93870491.Y3JvcCwxMjk3LDEwMTQsMCw2NzQ.jpg"
+									alt="item_image"
+									class="fashion__item-image"
+							>
+						</div>
+						<div class="fashion__item">
+							<img
+									src="https://mir-s3-cdn-cf.behance.net/projects/202/acf37299768293.Y3JvcCwxMTkyLDkzMywxMDMsMA.jpg"
+									alt="item_image"
+									class="fashion__item-image"
+							>
+						</div>
+						<div class="fashion__item">
+							<img
+									src="https://mir-s3-cdn-cf.behance.net/projects/202/59cac190218709.Y3JvcCwzNjQ4LDI4NTMsMCwxMzA5.jpg"
+									alt="item_image"
+									class="fashion__item-image"
+							>
+						</div>
+						<div class="fashion__item">
+							<img
+									src="https://mir-s3-cdn-cf.behance.net/projects/202/c3384c107005173.Y3JvcCwxOTY1LDE1MzcsMTE2LDI5.jpg"
+									alt="item_image"
+									class="fashion__item-image"
+							>
+						</div>
+						<div class="fashion__item">
+							<img
+									src="https://mir-s3-cdn-cf.behance.net/projects/202/11b264106002903.Y3JvcCwxMzc2LDEwNzcsMjY5LDA.jpg"
+									alt="item_image"
+									class="fashion__item-image"
+							>
+						</div>
+						<div class="fashion__item">
+							<img
+									src="https://mir-s3-cdn-cf.behance.net/projects/202/c3887f103106561.Y3JvcCwzMjQ1LDI1MzgsMCwxNTc0.jpg"
+									alt="item_image"
+									class="fashion__item-image"
+							>
+						</div>
+						<div class="fashion__item">
+							<img
+									src="https://mir-s3-cdn-cf.behance.net/projects/202/3df775106330403.Y3JvcCw5NTEsNzQ0LDEzMSw5OA.jpg"
+									alt="item_image"
+									class="fashion__item-image"
+							>
+						</div>
+						<div class="fashion__item">
+							<img
+									src="https://mir-s3-cdn-cf.behance.net/projects/202/4e022e107089267.Y3JvcCwxMzMzLDEwNDIsMCw0MTk.jpg"
+									alt="item_image"
+									class="fashion__item-image"
+							>
+						</div>
+						<div class="fashion__item">
+							<img
+									src="https://mir-s3-cdn-cf.behance.net/projects/202/e77c03102059189.Y3JvcCwyOTkzLDIzNDEsMCwxNzEx.jpg"
+									alt="item_image"
+									class="fashion__item-image"
+							>
+						</div>
+						<div class="fashion__item">
+							<img
+									src="https://mir-s3-cdn-cf.behance.net/projects/202/abfa8995320837.Y3JvcCwxMTY1LDkxMSwxMTgsMA.jpg"
+									alt="item_image"
+									class="fashion__item-image"
+							>
+						</div>
 					</div>
 				</div>
 				<button class="fashion__showMore">
 					<span class="fashion__showMore-text">Посмотреть еще</span>
 					<i class="fashion__showMore-icon fas fa-chevron-right"></i>
 				</button>
+			</section>
+		</section>
+		<section class="galleryList">
+			<section class="galleryList__section">
+				<header class="galleryList__header">
+					<div class="galleryList__header-heading">
+						<h4 class="galleryList__header-name">Мода</h4>
+						<button class="galleryList__header-showMore">
+							<span>Посмотреть еще</span>
+							<i class="galleryList__header-showMore-icon fas fa-chevron-right"></i>
+						</button>
+					</div>
+					<div class="galleryList__header-desc">
+						<span>Экспериментируйте с цветом, используя передовые модные решения в Behance, от естественной богемности до яркости от-кутюр.</span>
+					</div>
+				</header>
+				<div class="galleryList__container">
+					<div class="galleryList__item">
+						<div class="galleryList__item-image galleryList__item-image-fashion"></div>
+						<div class="galleryList__item-controls">
+							<i class="galleryList__item-icon far fa-copy"></i>
+							<i class="galleryList__item-icon far fa-save"></i>
+						</div>
+					</div>
+				</div>
+			</section>
+			<hr class="galleryList__divider">
+			<section class="galleryList__section">
+				<header class="galleryList__header">
+					<div class="galleryList__header-heading">
+						<h4 class="galleryList__header-name">Графический дизайн</h4>
+						<button class="galleryList__header-showMore">
+							<span>Посмотреть еще</span>
+							<i class="galleryList__header-showMore-icon fas fa-chevron-right"></i>
+						</button>
+					</div>
+					<div class="galleryList__header-desc">
+						<span>Эта коллекция палитр, от плакатов до логотипов и брендинга, демонстрирует цветовые тренды из лучших работ графического дизайна в Behance.</span>
+					</div>
+				</header>
+				<div class="galleryList__container">
+					<div class="galleryList__item">
+						<div class="galleryList__item-image galleryList__item-image-design"></div>
+						<div class="galleryList__item-controls">
+							<i class="galleryList__item-icon far fa-copy"></i>
+							<i class="galleryList__item-icon far fa-save"></i>
+						</div>
+					</div>
+				</div>
+			</section>
+			<hr class="galleryList__divider">
+			<section class="galleryList__section">
+				<header class="galleryList__header">
+					<div class="galleryList__header-heading">
+						<h4 class="galleryList__header-name">Иллюстрация</h4>
+						<button class="galleryList__header-showMore">
+							<span>Посмотреть еще</span>
+							<i class="galleryList__header-showMore-icon fas fa-chevron-right"></i>
+						</button>
+					</div>
+					<div class="galleryList__header-desc">
+						<span>Украсьте свой набросок или рисунок с помощью цветовой палитры, созданной на основе последних вдохновляющих проектов в галерее иллюстраций Behance.</span>
+					</div>
+				</header>
+				<div class="galleryList__container">
+					<div class="galleryList__item">
+						<div class="galleryList__item-image galleryList__item-image-illustration"></div>
+						<div class="galleryList__item-controls">
+							<i class="galleryList__item-icon far fa-copy"></i>
+							<i class="galleryList__item-icon far fa-save"></i>
+						</div>
+					</div>
+				</div>
 			</section>
 		</section>
 	</main>
@@ -240,11 +357,9 @@
 				<li class="footer__menu-item">
 					<a href="#" class="footer__menu-link">Правила сообщества</a>
 				</li>
-				<li class="footer__menu-item">
-					<span class="footer__copy">Copyright &copy; 2020 Stanislav Zavialov.</span>
-				</li>
 			</ul>
 		</nav>
+		<span class="footer__copy">Copyright &copy; 2020 Stanislav Zavialov.</span>
 		<div class="footer__logo">
 			<a href="#" class="footer__logo-link">Adobe</a>
 		</div>

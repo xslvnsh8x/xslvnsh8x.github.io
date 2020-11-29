@@ -158,6 +158,24 @@ template {
 [hidden] {
 	display: none;
 }
+@font-face {
+	font-family: "OpenSans-Regular";
+	font-style: normal;
+	font-weight: normal;
+	src: local("OpenSans-Regular"), url(/assets/fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+	font-family: "OpenSans-Bold";
+	font-style: normal;
+	font-weight: bold;
+	src: local("OpenSans-Bold"), url(/assets/fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+	font-family: "OpenSans-Light";
+	font-style: normal;
+	font-weight: normal;
+	src: local("OpenSans-Light"), url(/assets/fonts/OpenSans-Light.ttf);
+}
 .header {
 	-ms-grid-row: 1;
 	-ms-grid-column: 2;
@@ -178,10 +196,30 @@ template {
 	list-style: none;
 }
 .header__navigationLink {
+	position: relative;
+	padding: 10px 0;
 	line-height: 20px;
 	letter-spacing: 0.6px;
 	text-decoration: none;
 	color: #001A34;
+}
+.header__navigationLink::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 0%;
+	content: ".";
+	color: transparent;
+	background: #001A34;
+	height: 1px;
+}
+.header__navigationLink:hover::after {
+	width: 100%;
+}
+.header__navigationLink::after, .header__navigationLink::before {
+	transition: all 0.4s;
 }
 .header__tagline {
 	font-family: "OpenSans-Bold", sans-serif;
@@ -190,28 +228,28 @@ template {
 	letter-spacing: 0.6px;
 }
 
-.topBanner {
+.hero {
 	display: flex;
-	width: 100%;
+	align-items: center;
 	height: 708px;
-	background-image: url(/assets/img/top-banner.jpg);
+	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	background-repeat: no-repeat;
 }
-.topBanner__content {
-	align-self: center;
-	max-width: 550px;
-	margin-left: 150px;
-	color: #FFFFFF;
+.hero__content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	max-width: 532px;
+	color: #fff;
 }
-.topBanner__title {
+.hero__title {
 	font-family: OpenSans-Bold, sans-serif;
 	font-size: 58px;
 	line-height: 68px;
 	letter-spacing: 1px;
 }
-.topBanner__subtitle {
+.hero__subtitle {
 	margin-top: 16px;
 	margin-bottom: 32px;
 	font-family: OpenSans-Light, sans-serif;
@@ -219,40 +257,125 @@ template {
 	line-height: 32px;
 	letter-spacing: 0.6px;
 }
-.topBanner__button {
-	display: inline-block;
-	background: #005BFF;
-	border-radius: 8px;
-	padding: 22px 27px;
-	color: #FFFFFF;
-	font-size: 22px;
-	line-height: 20px;
-	letter-spacing: 0.7px;
-	text-decoration: none;
-	transition: all 0.3s ease;
+.hero--main {
+	justify-content: flex-start;
+	padding-left: 150px;
+	background-image: url(/assets/img/hero-main.jpg);
 }
-.topBanner__button:hover {
-	background: #004cd7;
+.hero--second {
+	justify-content: flex-end;
+	padding-right: 206px;
+	background-image: url(/assets/img/hero-second.jpg);
 }
 
-@font-face {
-	font-family: "OpenSans-Regular";
-	font-style: normal;
-	font-weight: normal;
-	src: local("OpenSans-Regular"), url(/assets/fonts/OpenSans-Regular.ttf);
+.courses {
+	margin: 80px 0;
 }
-@font-face {
-	font-family: "OpenSans-Bold";
-	font-style: normal;
-	font-weight: bold;
-	src: local("OpenSans-Bold"), url(/assets/fonts/OpenSans-Bold.ttf);
+.courses__box {
+	margin-top: 64px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 376px);
+	justify-content: center;
+	gap: 24px;
 }
-@font-face {
-	font-family: "OpenSans-Light";
-	font-style: normal;
-	font-weight: normal;
-	src: local("OpenSans-Light"), url(/assets/fonts/OpenSans-Light.ttf);
+.courses__box-item {
+	border: 1px solid #E9EEF1;
+	border-radius: 12px;
+	box-sizing: border-box;
+	box-shadow: 2px 2px 20px #E9EEF1;
+	overflow: hidden;
 }
+.courses__box-itemBg {
+	height: 173px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.courses__box-itemBg-business {
+	background-image: url(/assets/img/courses-business.jpg);
+}
+.courses__box-itemBg-python {
+	background-image: url(/assets/img/courses-python.jpg);
+}
+.courses__box-itemBg-frontend {
+	background-image: url(/assets/img/courses-frontend.jpg);
+}
+.courses__box-itemInfo {
+	padding: 32px 24px;
+}
+.courses__box-itemTitle {
+	font-size: 24px;
+	line-height: 28px;
+	letter-spacing: 0.6px;
+}
+.courses__box-itemText {
+	margin-top: 16px;
+	margin-bottom: 24px;
+	font-family: "OpenSans-Light", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0;
+}
+.courses__box-itemLink {
+	padding-bottom: 2px;
+	border-bottom: 1px solid transparent;
+	color: #005BFF;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 0.7px;
+	text-decoration: none;
+}
+.courses__box-itemLink:hover {
+	border-bottom: 1px solid #005BFF;
+}
+
+.advantages {
+	margin: 80px 0;
+}
+.advantages__box {
+	margin-top: 64px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 240px);
+	justify-content: center;
+	gap: 24px;
+}
+.advantages__box-itemBg {
+	height: 56px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-size: auto;
+}
+.advantages__box-itemBg-leader {
+	background-image: url(/assets/img/advantages-leader.svg);
+}
+.advantages__box-itemBg-expert {
+	background-image: url(/assets/img/advantages-expert.svg);
+}
+.advantages__box-itemBg-relevance {
+	background-image: url(/assets/img/advantages-relevance.svg);
+}
+.advantages__box-itemBg-curator {
+	background-image: url(/assets/img/advantages-leader.svg);
+}
+.advantages__box-itemInfo {
+	margin-top: 34px;
+	text-align: center;
+}
+.advantages__box-itemTitle {
+	margin-bottom: 16px;
+	font-size: 24px;
+	line-height: 28px;
+	letter-spacing: 0.6px;
+}
+.advantages__box-itemText {
+	color: #33475C;
+	font-size: 18px;
+	line-height: 26px;
+	letter-spacing: 0;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -263,7 +386,7 @@ template {
 	max-width: 1600px;
 	margin: 0 auto;
 	display: grid;
-	grid-template-areas: ". header ." ". main .";
+	grid-template-areas: ". header ." ". main ." ". footer .";
 	grid-template-columns: 92px 1fr 92px;
 	font-family: "OpenSans-Regular", sans-serif;
 	font-size: 16px;
@@ -274,5 +397,28 @@ template {
 	-ms-grid-row: 2;
 	-ms-grid-column: 2;
 	grid-area: main;
+}
+
+.title {
+	text-align: center;
+	font-size: 46px;
+	line-height: 54px;
+	letter-spacing: 0.8px;
+}
+
+.button {
+	display: inline-block;
+	background: #005BFF;
+	border-radius: 8px;
+	padding: 22px 27px;
+	color: #fff;
+	font-size: 22px;
+	line-height: 20px;
+	letter-spacing: 0.7px;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+.button:hover {
+	background: #004cd7;
 }
 /*# sourceMappingURL=main.css.map */
